@@ -1,0 +1,5 @@
+﻿{
+	"$type": "OpenSourceConnectorBodoCms.Business.Model.OpenSourceMetaData, OpenSourceConnectorBodoCms.Business",
+	"NugetPackage": "https://www.nuget.org/packages/Bodoconsult.Core.Windows/",
+	"Category": "Windows OS desktop apps"
+}

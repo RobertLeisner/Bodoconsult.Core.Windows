@@ -32,6 +32,10 @@ using System.Threading.Tasks;
 // ReSharper disable once CheckNamespace
 namespace Bodoconsult.Core.Windows.System
 {
+
+#nullable enable
+#nullable disable warnings
+
     public static class Clipboard
     {
         public static async Task SetTextAsync(string text, CancellationToken cancellation)

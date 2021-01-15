@@ -1,6 +1,9 @@
-﻿using System.Diagnostics;
+﻿using System.Collections;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
+using System.Security;
+using Bodoconsult.Core.Windows.Test.Model;
 using NUnit.Framework;
 
 namespace Bodoconsult.Core.Windows.Test.Helpers
@@ -9,7 +12,12 @@ namespace Bodoconsult.Core.Windows.Test.Helpers
     {
         private static string _testDataPath;
 
-        public static string OutputPath = @"D:\temp\Icons";
+
+        public const string NameAppSettingsFile = "CoreWindowsAppSettings.json";
+
+        public const string OutputPath = @"D:\temp\Icons";
+
+        public const string WorkPath = @"D:\Daten\Projekte\_work\Data\";
 
 
         static TestHelper()
@@ -51,6 +59,39 @@ namespace Bodoconsult.Core.Windows.Test.Helpers
 
             p.Start();
 
+        }
+
+
+        public static SecureString GetSecureString(string input)
+        {
+
+            var securepassword = new SecureString();
+            foreach (var c in input)
+            {
+                securepassword.AppendChar(c);
+            }
+
+            return securepassword;
+        }
+
+
+        public static AppSettings GetAppSettings()
+        {
+            var fileName = Path.Combine(WorkPath, NameAppSettingsFile);
+
+            var s = JsonHelper.LoadJsonFile<AppSettings>(fileName);
+
+            s.UserName = PasswordHandler.Decrypt(s.UserName);
+            s.Password = PasswordHandler.Decrypt(s.Password);
+
+            return s;
+        }
+
+
+
+        public static string ReadString(string fileName)
+        {
+            return File.ReadAllText(fileName);
         }
 
 

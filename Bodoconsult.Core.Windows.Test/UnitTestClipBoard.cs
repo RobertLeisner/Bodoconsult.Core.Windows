@@ -16,7 +16,7 @@ namespace Bodoconsult.Core.Windows.Test
         {
 
             // Arrange
-            var text = "CopyToClipboard";
+            const string text = "CopyToClipboard";
 
             // Act
             Clipboard.SetText(text);
