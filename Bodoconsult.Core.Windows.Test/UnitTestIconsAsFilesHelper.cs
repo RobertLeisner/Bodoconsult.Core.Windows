@@ -1,4 +1,8 @@
+// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
 using System.IO;
+using System.Runtime.Versioning;
 using Bodoconsult.Core.Windows.System;
 using Bodoconsult.Core.Windows.Test.Helpers;
 using NUnit.Framework;
@@ -6,6 +10,7 @@ using NUnit.Framework;
 namespace Bodoconsult.Core.Windows.Test
 {
     [TestFixture]
+    [SupportedOSPlatform("windows")]
     public class UnitTestIconsAsFilesHelper
     {
         //[SetUp]

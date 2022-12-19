@@ -1,6 +1,10 @@
-﻿using System.DirectoryServices.AccountManagement;
+﻿// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
+using System.DirectoryServices.AccountManagement;
 using System.DirectoryServices.ActiveDirectory;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Text;
 
 namespace Bodoconsult.Core.Windows.Network.ActiveDirectory.Helpers
@@ -9,6 +13,7 @@ namespace Bodoconsult.Core.Windows.Network.ActiveDirectory.Helpers
     /// <summary>
     /// Helper class with AD functionality
     /// </summary>
+    [SupportedOSPlatform("windows")]
     public class AdHelper
     {
         /// <summary>

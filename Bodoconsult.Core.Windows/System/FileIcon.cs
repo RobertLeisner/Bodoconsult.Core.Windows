@@ -1,12 +1,17 @@
-﻿using System;
+﻿// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
+using System.Runtime.Versioning;
 
 namespace Bodoconsult.Core.Windows.System
 {
+    [SupportedOSPlatform("windows")]
     public static class FileIcon
     {
 

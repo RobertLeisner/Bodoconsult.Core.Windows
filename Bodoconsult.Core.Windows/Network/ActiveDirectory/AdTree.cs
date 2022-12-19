@@ -1,7 +1,11 @@
-﻿using System;
+﻿// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
+using System;
 using System.Collections.Generic;
 using System.DirectoryServices;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Threading.Tasks;
 
 namespace Bodoconsult.Core.Windows.Network.ActiveDirectory
@@ -10,6 +14,7 @@ namespace Bodoconsult.Core.Windows.Network.ActiveDirectory
     /// <summary>
     /// Represents a AD tree
     /// </summary>
+    [SupportedOSPlatform("windows")]
     public class AdTree
     {
         public DirectoryEntry RootOu { get; set; }

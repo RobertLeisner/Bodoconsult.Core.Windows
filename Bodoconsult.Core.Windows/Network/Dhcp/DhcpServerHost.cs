@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
+using System.Text;
 using Bodoconsult.Core.Windows.Network.Dhcp.Native;
 
 namespace Bodoconsult.Core.Windows.Network.Dhcp

@@ -1,6 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Drawing.Imaging;
 using System.IO;
+// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
+using System.Runtime.Versioning;
 
 namespace Bodoconsult.Core.Windows.System
 {
@@ -8,10 +12,10 @@ namespace Bodoconsult.Core.Windows.System
     /// <summary>
     /// Get app icons for files from system
     /// </summary>
+    [SupportedOSPlatform("windows")]
     public class IconsAsFilesHelper
     {
-
-        readonly Dictionary<string, string> _ext = new Dictionary<string, string>();
+        private readonly Dictionary<string, string> _ext = new();
 
         /// <summary>
         /// Path to store the icons in

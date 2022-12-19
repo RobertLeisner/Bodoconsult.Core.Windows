@@ -1,4 +1,7 @@
-﻿namespace Bodoconsult.Core.Windows.Network.ActiveDirectory
+﻿// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
+namespace Bodoconsult.Core.Windows.Network.ActiveDirectory
 {
 
     /// <summary>

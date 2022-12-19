@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
+using System.Collections.Generic;
 
 namespace Bodoconsult.Core.Windows.Network.ActiveDirectory
 {

@@ -1,4 +1,7 @@
-﻿using System.Linq;
+﻿// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
+using System.Linq;
 using Bodoconsult.Core.Windows.Network.Dhcp.Native;
 
 namespace Bodoconsult.Core.Windows.Network.Dhcp

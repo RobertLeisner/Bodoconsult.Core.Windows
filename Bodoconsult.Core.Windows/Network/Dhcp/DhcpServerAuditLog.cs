@@ -1,4 +1,7 @@
-﻿using Bodoconsult.Core.Windows.Network.Dhcp.Native;
+﻿// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
+using Bodoconsult.Core.Windows.Network.Dhcp.Native;
 
 namespace Bodoconsult.Core.Windows.Network.Dhcp
 {

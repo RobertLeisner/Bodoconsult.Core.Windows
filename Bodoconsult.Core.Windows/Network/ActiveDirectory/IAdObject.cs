@@ -1,8 +1,13 @@
-﻿namespace Bodoconsult.Core.Windows.Network.ActiveDirectory
+﻿// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+using System.Runtime.Versioning;
+
+namespace Bodoconsult.Core.Windows.Network.ActiveDirectory
 {
     /// <summary>
     /// General interface of AD objects
     /// </summary>
+    [SupportedOSPlatform("windows")]
     public interface IAdObject
     {
         /// <summary>

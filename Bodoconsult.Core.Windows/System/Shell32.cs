@@ -1,8 +1,13 @@
-﻿using System;
+﻿// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
+using System;
 using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
 
 namespace Bodoconsult.Core.Windows.System
 {
+    [SupportedOSPlatform("windows")]
     public class Shell32
     {
         public const int MaxPath = 256;

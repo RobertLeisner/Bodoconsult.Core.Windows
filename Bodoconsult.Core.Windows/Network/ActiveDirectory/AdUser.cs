@@ -1,11 +1,16 @@
-﻿using System;
+﻿// Copyright (c) Bodoconsult EDV-Dienstleistungen GmbH. All rights reserved.
+
+
+using System;
 using System.Collections.Generic;
+using System.Runtime.Versioning;
 
 namespace Bodoconsult.Core.Windows.Network.ActiveDirectory
 {
     /// <summary>
     /// Represents a AD user
     /// </summary>
+    [SupportedOSPlatform("windows")]
     public class AdUser: IAdObject
     {
 
